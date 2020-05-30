@@ -1,13 +1,14 @@
 @S
+#Start
 #######################################################################################
-# CCLDP1D-2001(H)                                                                     #
+# CCLDP1D-2001(HSEO)                                                                  #
 # CC:C++ CONSOLE                                                                      #
 # LDP:Low Dimension Preview                                                           #
 # 1d:One-dimensional                                                                  #
 # H:Header File                                                                       #
-# (OTHERS: S:Source Code , E:Executable File , O:Other Files , *:Not Limited)         #
+# S:Source Code , E:Executable File , O:Other Files , *:Not Limited                   #
 #######################################################################################
-$VERSION:CCLDP1D-2001(H)
+$VERSION:CCLDP1D-2001(*)
 $NAME:"Example Mod"
 $SETTINGS:Def
 $AUTHOR:zenithwzj
@@ -21,12 +22,25 @@ xMax:10
 OTHERSET:{Def}#All:Default
 [/content]
 @E
+#End
+
 @S
-$VERSION:CCLDP2D-2005(SE)
+$VERSION:CCLDP2D-2005(*)
 $NAME:"Example Mod"
 $SETTINGS:Def
 $AUTHOR:zenithwzj
 [content]
-OTHERSET:{Def}
+Other:Def#ccldp2d-* Others Settings
+[/content]
+@E
+
+@S
+$VERSION:CCLDP2D-2005(*)
+$NAME:"Example Mod"
+$SETTINGS:Def
+$AUTHOR:zenithwzj
+[content]
+FUNCTION:".yourscraft\assets\Nohash\Functions\Example.funcs"
+Sets:".yourscraft\assers\Nohash\Sets\Example.sets
 [/content]
 @E
