@@ -4,13 +4,10 @@
 # CCLDP1D-2001(HSEO)                                                                  #
 # CC:C++ CONSOLE                                                                      #
 # LDP:Low Dimension Preview                                                           #
-# 1d:One-dimensional                                                                  #
 # H:Header File                                                                       #
 # S:Source Code , E:Executable File , O:Other Files , *:Not Limited                   #
 #######################################################################################
 $VERSION:CCLDP1D-2001(*)
-$NAME:"Example Mod"
-$SETTINGS:Def
 $AUTHOR:zenithwzj
 [content]
 colorDB:Def#Default
@@ -25,9 +22,9 @@ OTHERSET:{Def}#All:Default
 #End
 
 @S
-$VERSION:CCLDP2D-2005(*)
+$VERSION:CCLDP2D-2005-0.1.4(*)
 $NAME:"Example Mod"
-$SETTINGS:Def
+$TYPE:Def
 $AUTHOR:zenithwzj
 [content]
 Other:Def#ccldp2d-* Others Settings
@@ -35,12 +32,42 @@ Other:Def#ccldp2d-* Others Settings
 @E
 
 @S
-$VERSION:CCLDP2D-2005(*)
+$VERSION:CCLDP2D-2005-0.1.4(*)
 $NAME:"Example Mod"
-$SETTINGS:Def
+$TYPE:DEF
 $AUTHOR:zenithwzj
 [content]
 FUNCTION:".yourscraft\assets\Nohash\Functions\Example.funcs"
 Sets:".yourscraft\assers\Nohash\Sets\Example.sets
 [/content]
+@E
+
+@S
+$VERSION:CCLDP2D-2005-0.2.5$Forge2.4,$(*)#MOD LOADER1 NAME:FORGE VERSION:2.4
+$NAME:"Example Mod"
+$TYPE:DEF
+$FORMAT:YCMOD-574a#INI+FUNCS FORMAT
+$AUTHOR:"zenithwzj"
+$AUTHOREMAIL:zenithwzj@zhre.com
+$USERLOCK:"ZHRE-Studio"#JUST the account named "ZHRE-Studio" can use this mod
+$USERLOCKHASHCOOKIE:d3f56e#JUST the account which's hash(cookie) is d3f56e can use the mod
+[content]
+FUNCTION:".yourscraft\assets\Nohash\Functions\Example.funcs"
+Sets:".yourscraft\assers\Nohash\Sets\Example.sets
+[/content]
+@E
+
+@S
+$VERSION:CCLDP2D-2005-0.2.5$Forge:2.6.113,RSLoad:0.12,$(*)
+$NAME:"Example Mod"
+$AUTHOR:"zenithwzj"
+$AUTHOREMAIL:zenithwzj@zhre.com
+$USERLOCK:"ZHRE-Studio"
+$USERLOCKHASHCOOKIE:d3f56e
+<MOD FORMAT=YCMOD-574a TYPE=DEF>
+[content]
+FUNCTION:".yourscraft\assets\Nohash\Functions\Example.funcs"
+Sets:".yourscraft\assers\Nohash\Sets\Example.sets
+[/content]
+</MOD>
 @E
